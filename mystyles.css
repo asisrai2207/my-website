@@ -1,20 +1,25 @@
+
 body {
     background-color: #DEFCF9;
     margin: 0;
+  
   }
   
-header {
+.header {
     background-color: #CADEFC;
     padding: 5px 10px;
-   
-
-}
-
-h1 {
-    color: #354259;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
 }
+
+
+.header h1 {
+  color: #222222;
+  font-size: 40px;
+  font-family: 'Pacifico', cursive;
+  display: inline-block;
+ 
+}
+
 
 h2 {
   color: #354259;
@@ -36,15 +41,33 @@ p , .top-list {
 .top-container{
     display: inline-block; /*setting display to inline-block will allow us to set height, weight and property*/
     width: 61%;
-    margin-top: 20px;;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+.h-emoji {
+  font-size:60px;
+  padding-right: 20px;
 }
 
 .img-profile {
   display: inline-block; /* Setting display to inline-block will allow us to set height, weight and property*/
   vertical-align: top; /* When we use the value top, the element will be aligned to the top of the tallest element on the line. */
   padding-left: 40px;
+  padding-top: 10px;
   margin-top: 20px;
   width: 36%;
+
+}
+
+.mid-container {
+  padding-left: 10px;
+}
+
+td, th {
+  padding: 20px 60px;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
 
 }
   
@@ -54,20 +77,37 @@ hr {
 
 .contact-me {
   margin-bottom: 100px;
+  padding-left: 10px;
 }
 
 .bottom-container {
   background-color: #CADEFC;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
+  box-sizing: content-box;
 }
 
-.myButton {
+input[type=text], select, textarea {
+  width: 70%;
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.submit-btn{
 	box-shadow:inset 0px 39px 0px -24px #e67a73;
 	background-color:#e4685d;
 	border-radius:8px;
 	border:2px solid #ffffff;
-	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
@@ -76,10 +116,30 @@ hr {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #b23e35;
 }
-.myButton:hover {
-	background-color:#eb675e;
+
+.fa {
+  padding: 5px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
 }
-.myButton:active {
-	position:relative;
-	top:1px;
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-github {
+  color: black;
 }
